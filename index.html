@@ -25,7 +25,9 @@
         <br>
         <br>
         <button onclick="genQR()">Generate</button>
-        <script>
+        
+    </div>
+    <script>
         function genQR(){
     var gapi="https://chart.googleapis.com/chart?cht=qr&&chs=";
     var imgQR=document.getElementById("QR");
@@ -33,12 +35,11 @@
     var sizeQR=document.getElementById("size").value;
     if(textQR!==""){
         imgQR.src=gapi+sizeQR+"x"+sizeQR+"&chl="+textQR;
-    }els{
+    }else{
         alert("Please enter text")
     }
     console.log(sizeQR);
 }</script>
-    </div>
 
 
 
